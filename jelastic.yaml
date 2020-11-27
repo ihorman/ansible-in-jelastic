@@ -1,0 +1,8 @@
+---
+- name: Jelastic Test Ansible Manifest!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Create a marker test file
+    shell: echo "this is a test file" > /root/jelastic-test
