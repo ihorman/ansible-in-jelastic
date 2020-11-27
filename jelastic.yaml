@@ -7,5 +7,12 @@
   - name: Create a marker test file
     shell: echo "this is a test file" > /root/jelastic-test
 
-  - name: Create a marker test file2
-    shell: echo "this is a test file" > /root/jelastic-test2
+  - name: Wget is installed
+    yum:
+      name: 
+        - wget
+        - openjdk
+      state: present
+      update_cache: true
+    become: true
+
