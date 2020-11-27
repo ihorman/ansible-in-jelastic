@@ -5,4 +5,4 @@
   tasks:
  
   - name: Create a marker test file
-    shell: echo "this is a test file" > /root/jelastic-test
+    shell: echo "this is a test file222" > /root/jelastic-test
