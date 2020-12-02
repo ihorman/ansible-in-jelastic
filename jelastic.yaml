@@ -28,9 +28,3 @@
       uid: 1099
       group: jelastic
    
-  - name: test3
-    user:
-      name: johnlesley2
-      comment: John Lesley2
-      uid: 1010
-      group: jelastic
