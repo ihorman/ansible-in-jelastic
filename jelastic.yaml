@@ -16,10 +16,15 @@
       update_cache: true
     become: true
     
+ - name: Create Jelastic Group
+    group:
+      name: jelastic
+      state: present
+
   - name: Add John Lesley from Detroit test user
     user:
       name: johnlesley
       comment: John Lesley
       uid: 1099
-      group: admin
+      group: jelastic
 
