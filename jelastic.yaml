@@ -7,7 +7,7 @@
   - name: Create a marker test file
     shell: echo "this is a test file" > /root/jelastic-test
 
-  - name: Wget is installed
+  - name: Install few packages
     yum:
       name: 
         - wget
@@ -15,4 +15,11 @@
       state: present
       update_cache: true
     become: true
+    
+  - name: Add John Lesley from Detroit test user
+    user:
+      name: johnlesley
+      comment: John Lesley
+      uid: 1099
+      group: admin
 
